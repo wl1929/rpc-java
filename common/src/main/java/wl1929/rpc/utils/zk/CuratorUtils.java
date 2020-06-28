@@ -2,9 +2,13 @@ package wl1929.rpc.utils.zk;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.logging.Log;
+import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
+import org.apache.curator.framework.CuratorFrameworkFactory;
+import org.apache.curator.retry.ExponentialBackoffRetry;
 import org.apache.zookeeper.CreateMode;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -46,7 +50,7 @@ public class CuratorUtils {
             if (registeredPathSet.contains(path) || zkClient.checkExists().forPath(path) != null) {
                 log.info("节点已经存在，节点为:[{}]", path);
             } else {
-                //eg: /my-rpc/github.javaguide.HelloService/127.0.0.1:9999
+                //eg: /my-rpc/wl1929.rpc.HelloService/127.0.0.1:9999
                 zkClient.create().creatingParentsIfNeeded().withMode(CreateMode.PERSISTENT).forPath(path);
                 log.info("节点创建成功，节点为:[{}]", path);
             }
@@ -66,6 +70,47 @@ public class CuratorUtils {
         if (serviceAddressMap.containsKey(serviceName)) {
             return serviceAddressMap.get(serviceName);
         }
-        
+        List<String> result;
+        String servicePath = ZK_REGISTER_ROOT_PATH + "/" + serviceName;
+        try {
+            result = zkClient.getChildren().forPath(servicePath);
+            serviceAddressMap.put(serviceName, result);
+            registerWatcher(zkClient, serviceName);
+        } catch (Exception e) {
+            throw new RpcException(e.getMessage(), e.getCause());
+        }
+        return result;
     }
+
+    /**
+     * 清空注册中心的数据
+     */
+    public static void clearRegister() {
+        registeredPathSet.stream().parallel().forEach(p -> {
+            try {
+                zkClient.delete().forPath(p);
+            } catch (Exception e) {
+                throw new RpcException(e.getMessage(), e.getCause());
+            }
+        });
+        log.info("服务端（Provider）所有注册的服务都被清空:[{}]", registeredPathSet.toString());
+    }
+
+    private static CuratorFramework getZkClient() {
+        // 重试策略。重试3次，并且会增加重试之间的睡眠时间。
+        RetryPolicy retryPolicy = new ExponentialBackoffRetry(BASE_SLEEP_TIME, MAX_RETRIES);
+        CuratorFramework curatorFramework = CuratorFrameworkFactory.builder()
+                //要连接的服务器(可以是服务器列表)
+                .connectString(CONNECT_STRING)
+                .retryPolicy(retryPolicy)
+                .build();
+        curatorFramework.start();
+        return curatorFramework;
+    }
+
+    /**
+     * 注册监听指定节点。
+     *
+     * @param serviceName 服务对象接口名 eg:wl1929.rpc.HelloService
+     */
 }
