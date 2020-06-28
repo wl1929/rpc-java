@@ -5,8 +5,11 @@ import org.apache.commons.logging.Log;
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
+import org.apache.curator.framework.recipes.cache.PathChildrenCache;
+import org.apache.curator.framework.recipes.cache.PathChildrenCacheListener;
 import org.apache.curator.retry.ExponentialBackoffRetry;
 import org.apache.zookeeper.CreateMode;
+import wl1929.rpc.exception.RpcException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -113,4 +116,18 @@ public class CuratorUtils {
      *
      * @param serviceName 服务对象接口名 eg:wl1929.rpc.HelloService
      */
+    private static void registerWatcher(CuratorFramework zkClient, String serviceName) {
+        String servicePath = ZK_REGISTER_ROOT_PATH + "/" + serviceName;
+        PathChildrenCache pathChildrenCache = new PathChildrenCache(zkClient, servicePath, true);
+        PathChildrenCacheListener pathChildrenCacheListener = (CuratorFramework, pathChildrenCacheEvent) -> {
+            List<String> serviceAddresses = CuratorFramework.getChildren().forPath(servicePath);
+            serviceAddressMap.put(serviceName, serviceAddresses);
+        };
+        pathChildrenCache.getListenable().addListener(pathChildrenCacheListener);
+        try {
+            pathChildrenCache.start();
+        } catch (Exception e) {
+            throw new RpcException(e.getMessage(), e.getCause());
+        }
+    }
 }

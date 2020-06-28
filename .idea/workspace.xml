@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15b256e6-3019-491e-812f-05c1da488054" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_recipes_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/wl1929/rpc/enumeration/RpcErrorMessageEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/wl1929/rpc/exception/RpcException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../YF-202003-03.source" beforeDir="false" afterPath="$PROJECT_DIR$/../YF-202003-03.source" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-common/src/main/java/github/javaguide/utils/zk/CuratorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-common/src/main/java/github/javaguide/utils/zk/CuratorUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/wl1929/rpc/utils/zk/CuratorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/wl1929/rpc/utils/zk/CuratorUtils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/src/main/java/wl1929/rpc/utils/zk/CuratorUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="719">
-              <caret line="112" column="6" lean-forward="true" selection-start-line="112" selection-start-column="6" selection-end-line="112" selection-end-column="6" />
+            <state relative-caret-position="3720">
+              <caret line="124" column="64" lean-forward="true" selection-start-line="124" selection-start-column="64" selection-end-line="124" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,14 +40,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Throwable.java">
+        <entry file="file://$PROJECT_DIR$/common/src/main/java/wl1929/rpc/exception/RpcException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="397" column="6" lean-forward="true" selection-start-line="397" selection-start-column="6" selection-end-line="397" selection-end-column="6" />
+            <state relative-caret-position="600">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
-                <element signature="e#17326#17327#0" expanded="true" />
-                <element signature="e#17377#17378#0" expanded="true" />
+                <element signature="e#376#377#0" expanded="true" />
+                <element signature="e#398#399#0" expanded="true" />
+                <element signature="e#477#478#0" expanded="true" />
+                <element signature="e#500#501#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/src/main/java/wl1929/rpc/enumeration/RpcErrorMessageEnum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar!/lombok/AllArgsConstructor.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -67,6 +96,8 @@
         <option value="$PROJECT_DIR$/common/src/main/java/wl1929/rpc/utils/concurrent/threadpool/ThreadPoolFactoryUtils.java" />
         <option value="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/config/CustomShutdownHook.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/wl1929/rpc/utils/zk/CuratorUtils.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/wl1929/rpc/exception/RpcException.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/wl1929/rpc/enumeration/RpcErrorMessageEnum.java" />
       </list>
     </option>
   </component>
@@ -149,6 +180,28 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="wl1929" type="462c0819:PsiDirectoryNode" />
               <item name="rpc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wangli-rpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wangli-rpc" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wl1929" type="462c0819:PsiDirectoryNode" />
+              <item name="rpc" type="462c0819:PsiDirectoryNode" />
+              <item name="enumeration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wangli-rpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wangli-rpc" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wl1929" type="462c0819:PsiDirectoryNode" />
+              <item name="rpc" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wangli-rpc" type="b2602c69:ProjectViewProjectNode" />
@@ -318,12 +371,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593311757439</updated>
-      <workItem from="1593311758779" duration="12564000" />
+      <workItem from="1593311758779" duration="15240000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12564000" />
+    <option name="totallyTimeSpent" value="15240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
@@ -457,7 +510,7 @@
     <entry file="jar://D:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Throwable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
-          <caret line="397" column="6" lean-forward="true" selection-start-line="397" selection-start-column="6" selection-end-line="397" selection-end-column="6" />
+          <caret line="397" column="6" selection-start-line="397" selection-start-column="6" selection-end-line="397" selection-end-column="6" />
           <folding>
             <element signature="e#17326#17327#0" expanded="true" />
             <element signature="e#17377#17378#0" expanded="true" />
@@ -467,8 +520,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/java/wl1929/rpc/utils/zk/CuratorUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="112" column="6" lean-forward="true" selection-start-line="112" selection-start-column="6" selection-end-line="112" selection-end-column="6" />
+        <state relative-caret-position="3720">
+          <caret line="124" column="64" lean-forward="true" selection-start-line="124" selection-start-column="64" selection-end-line="124" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/wl1929/rpc/exception/RpcException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar!/lombok/AllArgsConstructor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/wl1929/rpc/enumeration/RpcErrorMessageEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
