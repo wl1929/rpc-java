@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15b256e6-3019-491e-812f-05c1da488054" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/wl1929/rpc/enumeration/RpcResponseCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/proxy/RpcClientProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/ClientTransport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../YF-202003-03.source" beforeDir="false" afterPath="$PROJECT_DIR$/../YF-202003-03.source" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-common/src/main/java/github/javaguide/exception/RpcException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-common/src/main/java/github/javaguide/exception/RpcException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-common/src/main/java/github/javaguide/utils/zk/CuratorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-common/src/main/java/github/javaguide/utils/zk/CuratorUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/handler/RpcRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/handler/RpcRequestHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/provider/ServiceProviderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/provider/ServiceProviderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/proxy/RpcClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/proxy/RpcClientProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/remoting/dto/RpcMessageChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/remoting/dto/RpcMessageChecker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/handler/RpcRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/handler/RpcRequestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/dto/RpcMessageChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/dto/RpcMessageChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/dto/RpcRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/dto/RpcRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/dto/RpcResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/dto/RpcResponse.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,12 +30,15 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/handler/RpcRequestHandler.java">
+        <entry file="file://$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/proxy/RpcClientProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+            <state relative-caret-position="594">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#570#571#0" expanded="true" />
+                <element signature="e#623#624#0" expanded="true" />
+                <element signature="e#718#748#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -49,8 +50,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -74,6 +75,8 @@
         <option value="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/dto/RpcResponse.java" />
         <option value="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/dto/RpcMessageChecker.java" />
         <option value="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/handler/RpcRequestHandler.java" />
+        <option value="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/ClientTransport.java" />
+        <option value="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/proxy/RpcClientProxy.java" />
       </list>
     </option>
   </component>
@@ -91,9 +94,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="952" />
+    <option name="y" value="-8" />
+    <option name="width" value="976" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -314,6 +318,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="wl1929" type="462c0819:PsiDirectoryNode" />
               <item name="rpc" type="462c0819:PsiDirectoryNode" />
+              <item name="proxy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wangli-rpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wangli-rpc" type="462c0819:PsiDirectoryNode" />
+              <item name="simple" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wl1929" type="462c0819:PsiDirectoryNode" />
+              <item name="rpc" type="462c0819:PsiDirectoryNode" />
               <item name="remoting" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -442,15 +457,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593311757439</updated>
-      <workItem from="1593311758779" duration="23653000" />
+      <workItem from="1593311758779" duration="24616000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23653000" />
+    <option name="totallyTimeSpent" value="24616000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="952" y="-8" width="976" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49149337" weight="0.35886213" />
@@ -533,26 +548,6 @@
         <state relative-caret-position="-366" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/wl1929/rpc/utils/concurrent/threadpool/ThreadPoolFactoryUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/wl1929/rpc/utils/concurrent/threadpool/CustomThreadPoolConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -583,39 +578,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/wl1929/rpc/enumeration/RpcErrorMessageEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/wl1929/rpc/exception/RpcException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-          <folding>
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/wl1929/rpc/utils/zk/CuratorUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="90" column="36" selection-start-line="90" selection-start-column="36" selection-end-line="90" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -656,16 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/wl1929/rpc/enumeration/RpcResponseCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/dto/RpcResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -686,12 +638,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/wl1929/rpc/enumeration/RpcResponseCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/wl1929/rpc/enumeration/RpcErrorMessageEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/wl1929/rpc/exception/RpcException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/wl1929/rpc/utils/zk/CuratorUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="90" column="36" selection-start-line="90" selection-start-column="36" selection-end-line="90" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/wl1929/rpc/utils/concurrent/threadpool/CustomThreadPoolConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/wl1929/rpc/utils/concurrent/threadpool/ThreadPoolFactoryUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/handler/RpcRequestHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
+        <state relative-caret-position="579">
           <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/ClientTransport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/proxy/RpcClientProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#718#748#0" expanded="true" />
           </folding>
         </state>
       </provider>
