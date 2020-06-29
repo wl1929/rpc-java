@@ -2,25 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15b256e6-3019-491e-812f-05c1da488054" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/wl1929/rpc/factory/SingletonFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/registry/ServiceRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/registry/ZkServiceDiscovery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/registry/ZkServiceRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/ChannelProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/NettyClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practise/src/main/java/com/algorithm4/chapter2/Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practise/src/main/java/com/algorithm4/chapter2/Insertion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practise/src/main/java/com/algorithm4/chapter2/Selection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practise/src/main/java/com/algorithm4/chapter2/SortCompare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_kryo___kryo_version_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_50_Final.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../YF-202003-03.source" beforeDir="false" afterPath="$PROJECT_DIR$/../YF-202003-03.source" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-common/src/main/java/github/javaguide/exception/RpcException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-common/src/main/java/github/javaguide/exception/RpcException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-common/src/main/java/github/javaguide/utils/zk/CuratorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-common/src/main/java/github/javaguide/utils/zk/CuratorUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/handler/RpcRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/handler/RpcRequestHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/provider/ServiceProviderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/provider/ServiceProviderImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/proxy/RpcClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/proxy/RpcClientProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/registry/ZkServiceRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/registry/ZkServiceRegistry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/remoting/dto/RpcMessageChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/remoting/dto/RpcMessageChecker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/remoting/transport/netty/client/UnprocessedRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/remoting/transport/netty/client/UnprocessedRequests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/NettyClientTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/NettyClientTransport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/UnprocessedRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/UnprocessedRequests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/wl1929/rpc/utils/zk/CuratorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/wl1929/rpc/utils/zk/CuratorUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/simple/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/config/CustomShutdownHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/config/CustomShutdownHook.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -82,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/NettyClient.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,7 +95,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/simple/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-270" />
+            <state relative-caret-position="29">
+              <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -163,6 +167,7 @@
         <option value="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/NettyClientTransport.java" />
         <option value="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/ChannelProvider.java" />
         <option value="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/NettyClient.java" />
+        <option value="$PROJECT_DIR$/simple/pom.xml" />
       </list>
     </option>
   </component>
@@ -189,7 +194,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -588,12 +593,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593311757439</updated>
-      <workItem from="1593311758779" duration="31544000" />
+      <workItem from="1593311758779" duration="32551000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31544000" />
+    <option name="totallyTimeSpent" value="32551000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
@@ -948,7 +953,7 @@
     <entry file="file://$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/NettyClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -957,7 +962,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/simple/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270" />
+        <state relative-caret-position="29">
+          <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+        </state>
       </provider>
     </entry>
   </component>
