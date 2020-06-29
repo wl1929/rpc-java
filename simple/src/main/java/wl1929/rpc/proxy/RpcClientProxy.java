@@ -1,10 +1,15 @@
 package wl1929.rpc.proxy;
 
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
+import wl1929.rpc.remoting.dto.RpcRequest;
+import wl1929.rpc.remoting.dto.RpcResponse;
 import wl1929.rpc.remoting.transport.ClientTransport;
 
 import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+import java.util.UUID;
 
 /**
  * @author wangli4773@163.com
@@ -38,5 +43,19 @@ public class RpcClientProxy implements InvocationHandler {
     /**
      * 当你使用代理对象调用方法的时候实际会调用到这个方法。代理对象就是你通过上面的 getProxy 方法获取到的对象。
      */
+    @SneakyThrows
+    @SuppressWarnings("unchecked")
+    @Override
+    public Object invoke(Object proxy, Method method, Object[] args) {
+        log.info("invoked method: [{}]", method.getName());
+        RpcRequest rpcRequest = RpcRequest.builder().methodName(method.getName())
+                .parameters(args)
+                .interfaceName(method.getDeclaringClass().getName())
+                .parameters(method.getParameterTypes())
+                .requestId(UUID.randomUUID().toString())
+                .build();
+        RpcResponse rpcResponse = null;
+        if (clientTransport instanceof NettyClientTransport) {
+    }
 
 }
