@@ -88,7 +88,7 @@ public class CuratorUtils {
     /**
      * 清空注册中心的数据
      */
-    public static void clearRegister() {
+    public static void clearRegistry() {
         registeredPathSet.stream().parallel().forEach(p -> {
             try {
                 zkClient.delete().forPath(p);
