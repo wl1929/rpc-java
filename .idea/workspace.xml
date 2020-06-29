@@ -2,18 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15b256e6-3019-491e-812f-05c1da488054" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/registry/ServiceDiscovery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/NettyClientTransport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/UnprocessedRequests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/wl1929/rpc/factory/SingletonFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/registry/ServiceRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/registry/ZkServiceDiscovery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/registry/ZkServiceRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/ChannelProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/NettyClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../YF-202003-03.source" beforeDir="false" afterPath="$PROJECT_DIR$/../YF-202003-03.source" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-common/src/main/java/github/javaguide/exception/RpcException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-common/src/main/java/github/javaguide/exception/RpcException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-common/src/main/java/github/javaguide/utils/zk/CuratorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-common/src/main/java/github/javaguide/utils/zk/CuratorUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/handler/RpcRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/handler/RpcRequestHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/provider/ServiceProviderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/provider/ServiceProviderImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/proxy/RpcClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/proxy/RpcClientProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/registry/ZkServiceRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/registry/ZkServiceRegistry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/remoting/dto/RpcMessageChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/remoting/dto/RpcMessageChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/remoting/transport/netty/client/UnprocessedRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../guide-rpc-framework/rpc-framework-simple/src/main/java/github/javaguide/remoting/transport/netty/client/UnprocessedRequests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/proxy/RpcClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/proxy/RpcClientProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/NettyClientTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/NettyClientTransport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/UnprocessedRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/UnprocessedRequests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,8 +57,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/NettyClientTransport.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
+            <state relative-caret-position="839">
+              <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/ChannelProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/NettyClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,10 +91,32 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/UnprocessedRequests.java">
+        <entry file="file://$PROJECT_DIR$/simple/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+            <state relative-caret-position="-270" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/src/main/java/wl1929/rpc/factory/SingletonFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="779">
+              <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/registry/ZkServiceDiscovery.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,7 +155,14 @@
         <option value="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/ClientTransport.java" />
         <option value="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/proxy/RpcClientProxy.java" />
         <option value="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/registry/ServiceDiscovery.java" />
+        <option value="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/UnprocessedRequests.java" />
+        <option value="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/registry/ServiceRegistry.java" />
+        <option value="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/registry/ZkServiceDiscovery.java" />
+        <option value="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/registry/ZkServiceRegistry.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/wl1929/rpc/factory/SingletonFactory.java" />
         <option value="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/NettyClientTransport.java" />
+        <option value="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/ChannelProvider.java" />
+        <option value="$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/NettyClient.java" />
       </list>
     </option>
   </component>
@@ -115,15 +175,24 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="simple" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="simple" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="952" />
-    <option name="y" value="-8" />
-    <option name="width" value="976" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -208,6 +277,17 @@
               <item name="wl1929" type="462c0819:PsiDirectoryNode" />
               <item name="rpc" type="462c0819:PsiDirectoryNode" />
               <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wangli-rpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wangli-rpc" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wl1929" type="462c0819:PsiDirectoryNode" />
+              <item name="rpc" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wangli-rpc" type="b2602c69:ProjectViewProjectNode" />
@@ -508,18 +588,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593311757439</updated>
-      <workItem from="1593311758779" duration="25657000" />
+      <workItem from="1593311758779" duration="31544000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25657000" />
+    <option name="totallyTimeSpent" value="31544000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="952" y="-8" width="976" height="1056" extended-state="0" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49149337" weight="0.3580786" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49149337" weight="0.35776806" />
       <window_info id="Structure" order="1" sideWeight="0.5085066" side_tool="true" weight="0.23933902" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -550,7 +630,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24945295" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.111597374" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.65645516" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" weight="0.32995737" />
@@ -777,6 +857,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/UnprocessedRequests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/registry/ServiceRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="18" column="82" selection-start-line="18" selection-start-column="82" selection-end-line="18" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/registry/ServiceDiscovery.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -784,21 +881,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/NettyClientTransport.java">
+    <entry file="file://$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/registry/ZkServiceRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
+        <state relative-caret-position="690">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/UnprocessedRequests.java">
+    <entry file="file://$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/registry/ZkServiceDiscovery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="392" column="13" selection-start-line="392" selection-start-column="13" selection-end-line="392" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/wl1929/rpc/factory/SingletonFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_211/src.zip!/java/nio/charset/spi/CharsetProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="71" column="22" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/NettyClientTransport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="839">
+          <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/ChannelProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/src/main/java/wl1929/rpc/remoting/transport/netty/client/NettyClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270" />
       </provider>
     </entry>
   </component>
