@@ -1,13 +1,13 @@
-package wl1929.rpc.wanglirpc;
+package wangli.rpc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WangliRpcApplication {
+public class HelloServiceApiApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(WangliRpcApplication.class, args);
+        SpringApplication.run(HelloServiceApiApplication.class, args);
     }
 
 }

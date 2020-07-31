@@ -1,10 +1,10 @@
-package wl1929.rpc.wanglirpc;
+package wangli.rpc;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WangliRpcApplicationTests {
+class ExampleServerApplicationTests {
 
     @Test
     void contextLoads() {
